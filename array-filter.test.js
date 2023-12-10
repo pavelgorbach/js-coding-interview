@@ -44,9 +44,9 @@ describe('Array.prototype.myFilter', () => {
   })
 
   test('uses this argument', () => {
-    expect([1, 2, 3, 4].myFilter(isThisProductEven)).toStrictEqual([]);
-    expect([1, 2, 3, 4].myFilter(isThisProductEven, 10)).toStrictEqual([1, 2, 3, 4]);
-    expect([1, 2, 3, 4].myFilter(isThisProductEven, 9)).toStrictEqual([2, 4]);
+    expect([1, 2, 3, 4].myFilter(isThisProductEven)).toStrictEqual([])
+    expect([1, 2, 3, 4].myFilter(isThisProductEven, 10)).toStrictEqual([1, 2, 3, 4])
+    expect([1, 2, 3, 4].myFilter(isThisProductEven, 9)).toStrictEqual([2, 4])
     expect([1, 2, 3, 4].myFilter(isThisProductEvenArrowFn)).toStrictEqual([])
     expect([1, 2, 3, 4].myFilter(isThisProductEvenArrowFn, 10)).toStrictEqual([])
     expect([1, 2, 3, 4].myFilter(isThisProductEvenArrowFn, 9)).toStrictEqual([])

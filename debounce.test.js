@@ -84,7 +84,7 @@ describe('debounce', () => {
   test('duration extended if called again during window', (done) => {
     let i = 0
     const increment = debounce(() => {
-      i++;
+      i++
     }, 100)
 
     expect(i).toBe(0)
@@ -94,8 +94,8 @@ describe('debounce', () => {
 
     // Should not fire yet.
     setTimeout(() => {
-      expect(i).toBe(0);
-      increment();
+      expect(i).toBe(0)
+      increment()
       expect(i).toBe(0)
     }, 50)
 
@@ -106,14 +106,14 @@ describe('debounce', () => {
 
     setTimeout(() => {
       expect(i).toBe(1)
-      done();
+      done()
       // Add a longer delay because the browser timer is unreliable.
     }, 1500)
   })
 
   test('callbacks can access `this`', (done) => {
     const increment = debounce(function (delta) {
-      this.val += delta;
+      this.val += delta
     }, 10)
 
     const obj = {
