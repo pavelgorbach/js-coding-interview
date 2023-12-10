@@ -1,4 +1,5 @@
-require('./array-filter')
+// require('./array-filter')
+import './array-filter'
 
 const isEven = (el) => el % 2 === 0
 const isOdd = (el) => el % 2 === 1
@@ -7,7 +8,7 @@ const isOddIndex = (_, idx) => idx % 2 === 1
 const isSquareEven = (_, idx, arr) => (arr[idx] * arr[idx]) % 2 === 0
 const isSquareOdd = (_, idx, arr) => (arr[idx] * arr[idx]) % 2 === 1
 const isThisProductEven = function (element) {
-  return (element * this) % 2 === 0;
+  return (element * this) % 2 === 0
 }
 const isThisProductEvenArrowFn = (el) => (el * this) % 2 === 0
 
