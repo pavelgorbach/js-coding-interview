@@ -1,7 +1,7 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
+import todoList from './todo-list.js'
 
-import App from './App.js'
-
-const root = createRoot(document.getElementById('root'))
-root.render(<App />)
+(() => {
+  const root = document.getElementById('root')
+  
+  todoList(root)
+})()
