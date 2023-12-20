@@ -10,7 +10,7 @@ if(nameArg) {
   createFilesAsync(name)
 }
 
-const TEST_PREFIX = 'test'
+const TEST_PREFIX = '.test'
 
 async function createFilesAsync(name) {
 
