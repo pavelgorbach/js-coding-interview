@@ -21,7 +21,7 @@ async function createFilesAsync(name) {
 
       const camelCaseName = name.replace(/([-_]\w)/g, (match) => match.toUpperCase().replace('-', ''));
       const fileContent = i === 1
-        ? `import ${camelCaseName} from './${camelCaseName}'`
+        ? `import ${camelCaseName} from './${name}'`
         : `
 /**
  * 
