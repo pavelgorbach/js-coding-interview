@@ -1,9 +1,9 @@
 {
-	"type": "module",
 	"scripts": {
-		"start": "webpack serve --mode development",
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
 		"component": "node scripts/index.js",
-		"build": "webpack --mode production",
 		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
 	},
 	"jest": {
@@ -25,6 +25,9 @@
 		"webpack-dev-server": "^4.15.1"
 	},
 	"dependencies": {
+		"next": "^14.0.4",
+		"nextra": "^2.13.2",
+		"nextra-theme-docs": "^2.13.2",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	}
