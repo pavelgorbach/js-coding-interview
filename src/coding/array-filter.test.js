@@ -1,4 +1,3 @@
-// require('./array-filter')
 import './array-filter'
 
 const isEven = (el) => el % 2 === 0
